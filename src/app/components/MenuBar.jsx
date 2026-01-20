@@ -25,6 +25,7 @@ export default function MenuBar() {
         setShow(false);
     };
 
+    
     return (
         <>
             <Navbar className="bg-body-tertiary" data-bs-theme={theme} expand="sm">
