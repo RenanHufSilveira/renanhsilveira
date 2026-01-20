@@ -41,13 +41,24 @@ a {
   }
 }*/
 
-/* Corrige Offcanvas abrindo dos dois lados */
-.offcanvas-start {
-  left: 0 !important;
-  right: auto !important;
+/* ======================
+   LIGHT MODE (padrão)
+====================== */
+:root {
+  --bs-body-bg: #ffffff !important;
+  --bs-body-color: #212529 !important;
+
+  --bs-link-color: #000000 !important;
+  --bs-link-hover-color: #dddddd !important;
 }
 
-.offcanvas-end {
-  right: 0 !important;
-  left: auto !important;
+/* ======================
+   DARK MODE
+====================== */
+[data-bs-theme="dark"] {
+  --bs-body-bg: #212529 !important;
+  --bs-body-color: #e5e7eb !important;
+
+  --bs-link-color: #ffffff !important;
+  --bs-link-hover-color: #dddddd !important;
 }
