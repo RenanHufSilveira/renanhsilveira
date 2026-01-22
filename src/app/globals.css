@@ -41,9 +41,6 @@ a {
   }
 }*/
 
-/* ======================
-   LIGHT MODE (padrão)
-====================== */
 :root {
   --bs-body-bg: #ffffff !important;
   --bs-body-color: #212529 !important;
@@ -52,13 +49,22 @@ a {
   --bs-link-hover-color: #dddddd !important;
 }
 
-/* ======================
-   DARK MODE
-====================== */
 [data-bs-theme="dark"] {
   --bs-body-bg: #212529 !important;
   --bs-body-color: #e5e7eb !important;
 
   --bs-link-color: #ffffff !important;
   --bs-link-hover-color: #dddddd !important;
+  
+}
+
+.navbar .nav-link.active,
+.offcanvas .nav-link.active {
+  font-weight: 600;
+  color: #ffffff;
+}
+
+[data-bs-theme="light"] .navbar .nav-link.active,
+[data-bs-theme="light"] .offcanvas .nav-link.active {
+  color: #000000;
 }
